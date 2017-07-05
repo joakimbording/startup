@@ -22,11 +22,6 @@ const ms = metalsmith(__dirname)
     .use(define({
         development: dev ? true : null,
     }))
-    .use(markdown({
-        smartypants: true,
-        gfm: true,
-        tables: true,
-    }))
     .use((files, metalsmith, next)  => {
         var content;
         var k;

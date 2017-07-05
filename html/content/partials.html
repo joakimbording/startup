@@ -1,0 +1,11 @@
+---
+layout: page.html
+title: Use partials
+description: Hov to use partials
+test: 'Content from frontmatter'
+---
+<h2> Include `\{{ test }}` from frontmatter</h2>
+<p>{{ test }}</p>
+
+<h2>Include `\{{> hero title=title }}` with attributes</h2>
+{{> hero title=title }}
