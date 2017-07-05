@@ -1,0 +1,18 @@
+
+.form-field {
+  display: block;
+  margin-bottom: $spacing--large;
+  width: 100%;
+  input[type='text'], input[type='password'], input[type='number'], input[type='tel'], input[type='email'], textarea {
+    width: 100%;
+  }
+  @include breakpoint(small){
+     max-width: 23rem;
+   }
+  &__label {
+    @extend %h4;
+    line-height: 1.5;
+    margin-bottom: $spacing--small;
+    font-size: 1rem;
+  }
+}

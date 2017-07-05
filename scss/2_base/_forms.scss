@@ -1,0 +1,95 @@
+// Labels
+label {
+    display: block;
+}
+
+// Inputs and textareas
+input,
+textarea {
+
+    font-family: $font;
+    font-weight: 400;
+    font-size: 1rem;
+    /* To get your input fields to render consistently across all browsers, you need to use both height and line-height, and avoid vertical padding. */
+    line-height: 2.5rem;
+    min-height: calc(2.5rem + 6px);
+    box-sizing: border-box;
+    padding: 0 0.5em;
+    display: block;
+    border: none;
+    border-bottom: 2px solid $color__primary;
+    background: $color__white;
+    &:disabled {
+        border-bottom-color: $color__gray;
+    }
+    &:focus {
+      border-bottom-color: $color__secondary;
+      outline-style: solid;
+      outline-width: 3px;
+    }
+}
+
+textarea {
+  min-height: 5rem;
+  line-height: $lineheight--small;
+  padding-top: $spacing--small;
+  padding-bottom: $spacing--small;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// Checkboxes and radiobuttons
+label input[type='checkbox']:first-child,
+label input[type='radio']:first-child {
+    display: inline-block;
+}
+
+// Buttons
+button {
+    border: 0;
+    background: $color__secondary;
+    color: $color__white;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 0.80rem $spacing 0.70rem $spacing;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    &:focus,
+    &:hover {
+        background: $color__secondary;
+    }
+    &:focus {
+      outline-style: solid;
+      outline-width: 3px;
+    }
+    &:disabled {
+        color: $color__gray;
+        background: $color__gray;
+    }
+}
+
+// Select fields
+select {
+    display: block;
+    font-size: 1rem;
+    &:focus {
+      outline-style: solid;
+      outline-width: 3px;
+    }
+}
+
+// Fieldsets and legends
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+
+    legend {
+        @extend %h3;
+        margin-bottom: $spacing--large;
+    }
+}

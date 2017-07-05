@@ -1,0 +1,43 @@
+.list, ul, ol {
+    padding-left: 1.4rem;
+    margin:0;
+    margin-bottom: $spacing--large;
+}
+
+.list, .list-wrapper ul, .list-wrapper ol  {
+  li {
+    padding-left: 1.25em;
+    text-indent: -0em;
+    padding-bottom: $spacing--small;
+    &:before {
+      display: inline-block;
+      content: "•";
+      color: $color__red;
+      position: absolute;
+      margin-left: -1.25rem;
+    }
+  }
+}
+
+ul.list, .list-wrapper ul {
+  list-style: none;
+  padding:0;
+}
+
+ol.list, .list-wrapper ol {
+  list-style: none;
+  padding:0;
+  counter-reset: list-count;
+  li:before {
+    color: $color__black;
+    content: counter(list-count);
+    counter-increment: list-count;
+    font-weight: 500;
+  }
+}
+
+nav ol,
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}

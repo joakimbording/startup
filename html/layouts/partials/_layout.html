@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{{ title }}</title>
+    <meta name='description' content='' />
+    <meta property='og:title' content='' />
+    <meta property='og:description' content='' />
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content='' />
+    <meta property='og:locale' content='nb_NO' />
+    <meta property="og:image" content='' />
+    <link rel="icon" href="images/favicon_32.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/css/screen.css">
+    <script src="js/main.js"></script>
+
+    {{#if development}}
+    <script src="http://localhost:35729/livereload.js"></script>
+    {{/if}}
+</head>
+<body>
+
+    {{#block "main"}}
+    {{{contents}}}
+    {{/block}}
+
+    {{#block "footer"}}
+    {{> footer}}
+    {{/block}}
+
+    <script src="js/main.js"></script>
+</body>
+</html>

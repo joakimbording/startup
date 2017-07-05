@@ -1,0 +1,54 @@
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  @include breakpoint(medium){
+      overflow: auto;
+  }
+  table {
+    width: 100%;
+  }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin: $spacing 0 $spacing--large;
+}
+
+caption {
+    margin-bottom: 0.4rem;
+    text-align: left;
+}
+
+thead tr {
+    border-bottom: 2px solid $color__gray;
+}
+th,
+td {
+    @extend small;
+    border-bottom: 2px solid  $color__gray;
+    padding-top: $spacing;
+    line-height: 1.4em;
+    vertical-align: top;
+    padding-right: 1em;
+    padding-bottom: 0.5rem;
+    min-width: 7rem;
+
+}
+
+th {
+  padding-top: 0;
+}
+
+th + *,
+td + * {
+    padding-left: 0.25em;
+}
+
+tfoot td {
+  @extend small;
+  font-style: italic;
+  border: none;
+}

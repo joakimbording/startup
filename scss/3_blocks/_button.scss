@@ -1,0 +1,51 @@
+/*
+Button
+
+Styling for buttons.
+
+Markup:
+<button class="button {{modifier_class}}">Button</button>
+
+.button--primary - Primary button
+.button--secondary - Secondary button
+
+Styleguide 3.1
+*/
+
+.button {
+    background: $color__secondary;
+    color: $color__white;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 0.75rem $spacing;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1;
+    appearance: none;
+    border: none;
+    transition: all 0.2s ease;
+    margin-right: $spacing--small;
+
+    &:hover, &:focus {
+        box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+        transform: translate(0, -2px);
+    }
+    &:active {
+        transform: translate(0, 0);
+    }
+
+    &--small {
+        padding: $spacing--small $spacing;
+    }
+
+    &--large {
+        padding: 1.25rem 1.5rem;
+    }
+
+    &--primary {
+        background: $color__primary;
+        color: $color__white;
+    }
+}

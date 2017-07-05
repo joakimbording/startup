@@ -1,0 +1,59 @@
+/*
+
+OBOS Merkevarehåndbok
+
+*/
+
+// ------------------------------------
+// Functional use of colors
+// ------------------------------------
+
+$color__primary: #2779C5;
+$color__secondary: $color__primary;
+$color__secondary--light: #71baff;
+$color__black: #333;
+$color__black--dark: #222;
+$color__black--light: #444;
+$color__white: #fff;
+$color__gray: #ccc;
+$color__gray--light: #efefef;
+$color__gray--dark: #AAA;
+$color__gray-text: #777;
+
+// ------------------------------------
+// Spacing
+// ------------------------------------
+
+$spacing: 1rem;
+$spacing--small: .5rem;
+$spacing--large: 1.8rem;
+$spacing--xlarge: 3.6rem;
+
+$page-width: 37rem;
+$page-width--wide: 65rem;
+$page-width--xwide: 80rem;
+
+// ------------------------------------
+// Breakpoints
+// ------------------------------------
+
+$breakpoints: (
+    small: 480,
+    medium: 720,
+    large: 1000,
+    wide: 1800,
+);
+
+// ------------------------------------
+// Typography
+// ------------------------------------
+
+$font: 'Arvo', 'Helvetica', sans-serif;
+$font--secondary: 'Arvo', 'Helvetica', sans-serif;
+
+// ------------------------------------
+// Lineheight
+// ------------------------------------
+
+$lineheight: 1.8;
+$lineheight--small: 1.7;
