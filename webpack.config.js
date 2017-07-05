@@ -9,6 +9,8 @@ const mainJSPath = path.resolve(__dirname, 'js', 'main.js')
 const mainCSSPath = path.resolve(__dirname, 'scss', 'screen.scss')
 const publicPath = path.resolve(__dirname, 'public')
 
+const kss = require('kss-webpack-plugin');
+
 module.exports = {
     entry: [
       mainJSPath,
@@ -30,6 +32,29 @@ module.exports = {
         {
           test: /\.scss?$/,
           loader: ExtractTextPlugin.extract('css-loader!postcss-loader!sass-loader')
+        },
+        {
+            test: /\.scss$/,
+            exclude: /(node_modules|bower_components)/,
+            use: {
+                loader: 'kss-loader',
+                options: {
+                  title: 'Styleguide',
+                  mask: '*.scss|*.css',
+                  placeholder: '[modifier class]',
+                  source: './scss/',
+                  css: [
+                      '../css/screen.css'
+                  ],
+                  js: [
+                      '../js/main.js',
+                      'http://localhost:35729/livereload.js'
+                  ],
+                  destination: './public/styleguide/',
+                  homepage: './readme.md',
+                  markup: true
+                }
+            }
         }
       ]
     },

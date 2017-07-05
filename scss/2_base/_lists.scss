@@ -1,3 +1,22 @@
+/*
+List
+
+Markup:
+<ul>
+ <li>2 for 1 på Asker-kamp</li>
+ <li>20 % rabatt på forestillinger fra Nationaltheatret</li>
+ <li>10 % rabatt hos Maxbo</li>
+ <li>20 % rabatt hos Den Norske Opera &amp; Ballett på hverdager hvis du tar med to barn</li>
+ <li>Halv pris på Lambertseter bad</li>
+</ul>
+<ol>
+ <li>Meld først innbruddet til politiet. </li>
+ <li>Meld så inn skaden til oss så fort du har anledning.</li>
+ <li>Vent til forsikringssaken er avsluttet før du kontakter håndtverkere.</li>
+</ol>
+
+Styleguide 2.1
+*/
 .list, ul, ol {
     padding-left: 1.4rem;
     margin:0;
@@ -12,7 +31,7 @@
     &:before {
       display: inline-block;
       content: "•";
-      color: $color__red;
+      color: $color__black;
       position: absolute;
       margin-left: -1.25rem;
     }

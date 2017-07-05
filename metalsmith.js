@@ -1,7 +1,6 @@
 
 const metalsmith = require('metalsmith');
 const define = require('metalsmith-define');
-const markdown = require('metalsmith-markdown');
 const layouts = require('metalsmith-layouts');
 const inplace = require('metalsmith-in-place');
 const watch = require('metalsmith-watch');

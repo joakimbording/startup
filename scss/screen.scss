@@ -1,3 +1,4 @@
+
 /*
 Variables
 */
@@ -22,10 +23,10 @@ Styling of default html elements.
 @import 'scss/2_base/body';
 @import 'scss/2_base/fonts';
 @import 'scss/2_base/typography';
-//@import 'scss/2_base/lists';
-//@import 'scss/2_base/tables';
+@import 'scss/2_base/lists';
+@import 'scss/2_base/tables';
 //@import 'scss/2_base/images';
-//@import 'scss/2_base/forms';
+@import 'scss/2_base/forms';
 
 /*
 Blocks
@@ -34,10 +35,10 @@ Design components, seperated as blocks.
 
 */
 @import 'scss/3_blocks/page';
+@import 'scss/3_blocks/button';
 //@import 'scss/3_blocks/icon';
 //@import 'scss/3_blocks/flag';
 //@import 'scss/3_blocks/form-field';
-//@import 'scss/3_blocks/button';
 //@import 'scss/3_blocks/checkbox';
 //@import 'scss/3_blocks/select';
 //@import 'scss/3_blocks/grid';

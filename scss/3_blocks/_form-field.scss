@@ -1,4 +1,45 @@
+/*
+Form-field
 
+Markup:
+<div class="form-field">
+    <label class="form-field__label" for="form-address">
+        Adresse
+    </label>
+    <input type="text" id="form-address">
+</div>
+<div class="form-field form-field--small">
+    <label class="form-field__label" for="form-postal">
+        Postnummer
+    </label>
+    <input type="number" id="form-postal">
+</div>
+<fieldset class="form-field form-field--small">
+  <legend class="form-field__label">
+    Prisantydning ny bolig
+  </legend>
+  <div class="form-combination">
+    <div class="form-combination__item">
+      <label for="price-to" class="form-combination__item-label">Kr</label>
+      <input id="price-to" class="form-combination__item-input t-text-align-right" value="2350000" placeholder="0" pattern="\d*">
+    </div>
+  </div>
+</fieldset>
+<div class="form-field">
+    <label class="form-field__label" for="form-you">
+        Mer om deg
+    </label>
+    <textarea id="form-you"></textarea>
+</div>
+<div class="form-field form-field--disabled">
+    <label class="form-field__label" for="form-inaktiv-text">
+        Inaktivt felt
+    </label>
+    <input type="number" id="form-inaktiv-text" disabled>
+</div>
+
+Styleguide 3
+*/
 .form-field {
   display: block;
   margin-bottom: $spacing--large;

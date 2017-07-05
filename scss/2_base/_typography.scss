@@ -1,3 +1,39 @@
+/*
+Typografi
+
+All typografi
+
+Markup:
+<h1>Overskrift nivå 1</h1>
+<h2>Overskrift nivå 2</h2>
+<h3>Overskrift nivå 3</h3>
+<h4>Overskrift nivå 4</h4>
+<p>Vanlig tekst</p>
+<p><small>Liten tekst</small></p>
+<h1>Overskrift nivå 1 med ekstra lang tekst</h1>
+<h2>Overskrift nivå 2 med ekstra lang tekst som kommer til å bryte</h2>
+<h3>Overskrift nivå 3 med ekstra lang tekst som kommer til å bryte over flere linjer av gangen</h3>
+<h4>Overskrift nivå 4 med ekstra lang tekst som kommer til å bryte over flere linjer av gangen</h4>
+<p>Vanlig tekst med mange ord som kommer til å bryte over flere linjer av gangen hvis den bare er lang nok. </p>
+<p><small>Vanlig tekst med mange ord som kommer til å bryte over flere linjer av gangen hvis den abre er lang nok. </small></p>
+<h1>Slik reiser du trygt</h1>
+<p>Med reiseforsikring, reisekort og en oversikt over hvilke land det er trygt å reise til, er du godt rustet for ferien.</p>
+<h2>Ha alltid med deg reisekortet</h2>
+<p>Du bør alltid ha med deg reisekortet ditt når du drar utenlands. Dette fungerer som et forsikringsbevis dersom noe oppstår på reisen. På kortet finner du også finne telefonnummeret til Falck Global Assistance som er tilgjengelig 24-timer i døgnet. Har du mistet reisekortet ditt, kan du bestille nytt reisekort.</p>
+<h3>Kredittkortet er ikke nok</h3>
+<p>Reiseforsikring på kredittkortet dekker ikke alltid like mye som en vanlig reiseforsikring. Du kan risikere å ikke ha tilstrekkelig dekning dersom uhellet er ute. Du bør derfor sjekke dekningene til kredittkortet ditt opp mot vår reiseforsikring.</p>
+<h2>Reise til land som er trygge  </h2>
+<p>Hvis du reiser til et utrygt land kan du risikere at reiseforsikringen din ikke er gyldig. Vi anbefaler deg derfor å sjekke om landet du planlegger å reise til er trygt - sjekk her. Det kan også være lurt å registrerer seg på <a href="http://reiseregistrering.no">reiseregistrering.no</a>.</p>
+<p>Vil du forsikre alle turene utenfor hjemmet ditt, er reiseforsikring hos OBOS det rette for deg. Du får ekstra god pris om du er medlem.  </p>
+
+.h1 - Heading 1 styled override
+.h2 - Heading 1 styled override
+.h3 - Heading 1 styled override
+.h4 - Heading 1 styled override
+
+Styleguide 2
+*/
+
 html {
     font-size: 100%;
 }
@@ -172,21 +208,15 @@ small {
 a, .link {
   color: $color__black;
   text-decoration: none;
-  //border-bottom: 2px solid $color__black;
-  background-image: linear-gradient(to top, transparent, transparent 0px, $color__black 0px, $color__black 1px, transparent 1px);
-  text-shadow: -1px -1px 0 $color__white, 1px -1px 0 $color__white, -1px 1px 0 $color__white, 1px 1px 0 $color__white;
+  border-bottom: 1px solid $color__black;
   transition: background-image 200ms ease;
   &:hover, &:focus {
     color: $color__primary;
-    background-image: linear-gradient(to top, transparent, transparent 0px, $color__primary 0px, $color__primary 1px, transparent 1px);
-    //border-bottom-color: $color__primary;
+    border-bottom-color: $color__primary;
   }
   &:active {
     color: $color__primary;
-    //border-bottom-color: $color__primary;
-  }
-  &::selection {
-    text-shadow: -1px -1px 0 $color__secondary--light, 1px -1px 0 $color__secondary--light, -1px 1px 0 $color__secondary--light, 1px 1px 0 $color__secondary--light;
+    border-bottom-color: $color__primary;
   }
 }
 

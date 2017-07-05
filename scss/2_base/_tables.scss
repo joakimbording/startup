@@ -1,3 +1,36 @@
+/*
+Tables
+
+Markup:
+<div class="table-responsive">
+  <table>
+  <thead>
+  <tr><th>Annuitets- og serielån</th>
+  <th>Nominell rente</th>
+  <th>Effektiv rente</th>
+  </tr></thead>
+  <tbody>
+  <tr>
+    <td>Lån over 2 000 000 inntil 75%</td>
+    <td> 2,15%</td>
+    <td>2,21%</td>
+  </tr>
+  <tr>
+    <td>Lån under 2 000 000 inntil 75%</td>
+    <td>2,40%</td>
+    <td>2,47%</td>
+  </tr>
+  <tr>
+    <td>Lån mellom 75% og 85%</td>
+    <td>3,75%</td>
+    <td>Beregnes ut fra beløp og ønsket nedbetalingstid</td>
+  </tr>
+  </tbody>
+  </table>
+</div>
+
+Styleguide 2.2
+*/
 .table-responsive {
   width: 100%;
   overflow-x: auto;
