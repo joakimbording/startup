@@ -5,16 +5,16 @@ module.exports = {
         content: './html/content',
         layout: './html/layouts',
         partials: './html/layouts/partials',
-        assets: './images',
+        assets: './assets',
         watch: {
             '${source}/**/*': '**/*',
             './html/layouts/**/*': '**/*',
+            './assets/**/*': '**/*',
         },
     },
     dist: {
         root: 'public',
-        assets: './images',
+        assets: './assets',
         html: './public/',
-
     },
 };

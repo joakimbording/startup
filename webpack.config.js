@@ -9,7 +9,6 @@ const mainJSPath = path.resolve(__dirname, 'js', 'main.js')
 const mainCSSPath = path.resolve(__dirname, 'scss', 'screen.scss')
 const publicPath = path.resolve(__dirname, 'public')
 
-const kss = require('kss-webpack-plugin');
 
 module.exports = {
     entry: [
